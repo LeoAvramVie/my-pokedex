@@ -1,0 +1,21 @@
+<mat-label align="center"><h1 class="detailHeader" >Your favorite Pokemon is</h1></mat-label>
+
+<mat-card class="card">
+
+  <mat-card-header>
+    <img mat-card-avatar class="header-image" src="{{pokemonImage}}">
+    <mat-card-title>{{pokemon.name}}</mat-card-title>
+    <mat-card-subtitle>Nº {{pokemon.id}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img mat-card-image src="{{pokemonImage}}" alt="pokemon">
+
+  <mat-card-content class="chipBtn">
+    <mat-chip-list>
+      <mat-chip color="primary">Type: {{pokemonType}}</mat-chip>
+      <mat-chip color="primary">Height: {{pokemon.height}}</mat-chip>
+      <mat-chip color="primary">Weight: {{pokemon.weight}}</mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+
+</mat-card>
